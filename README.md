@@ -131,9 +131,9 @@ Use the -O option as below
 
 Use the -O option as below
 
-    % mecab -Oyomi (ヨミ付与)
-    % mecab -Ochasen (ChaSen互換)
-    % mecab -Odump (全情報を出力)
+    % mecab -Oyomi (Assign readings)
+    % mecab -Ochasen (ChaSen compatible)
+    % mecab -Odump (Full information dump)
 
 These output formats are stored in `/usr/local/lib/mecab/ipadic/dicrc`.
 The user can also create custom definitions. Please take a look
