@@ -137,7 +137,7 @@ Use the -O option as below
 
 These output formats are stored in `/usr/local/lib/mecab/ipadic/dicrc`.
 The user can also create custom definitions. Please take a look
-at the Output Formats documentation (TODO).
+at the [Output Formats documentation (TODO)](http://mecab.googlecode.com/svn/trunk/mecab/doc/format.html).
 
 Advanced Usage
 --------------
