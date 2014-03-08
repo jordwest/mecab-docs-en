@@ -31,18 +31,18 @@ Features
 Comparison
 ----------
 
-(Todo)
+(TODO)
 
 Mailing List
 ------------
 
 Changelog
 ---------
-(Todo)
+(TODO)
 
 Downloads
 ---------
-
+[See project page for up to date downloads](http://mecab.googlecode.com/svn/trunk/mecab/doc/index.html#download)
 
 Installation
 ------------
@@ -84,6 +84,9 @@ Usage
 
 ### Getting Started
 
+See below MeCab accepting input from stdin upon startup. MeCab assumes one line
+per sentence.
+
     % mecab
     すもももももももものうち
     すもも  名詞,一般,*,*,*,*,すもも,スモモ,スモモ
@@ -95,10 +98,23 @@ Usage
     うち    名詞,非自立,副詞可能,*,*,*,うち,ウチ,ウチ
     EOS
 
-
+The output format significantly differs from ChaSen, becoming:
 
     表層形\t品詞,品詞細分類1,品詞細分類2,品詞細分類3,活用形,活用型,原形,読み,発音
 
+or in English:
+    Original Form\t
+    Part of Speech,
+    Part of Speech section 1,
+    Part of Speech section 2,
+    Part of Speech section 3,
+    Conjugated form,
+    Inflection,
+    Reading,
+    Pronounciation
+
+If a file is passed in as the argument, it becomes the analysis target.
+It is also possible to direct output to a file using the -o option. 
 
     % mecab INPUT -o OUTPUT
 
