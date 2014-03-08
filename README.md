@@ -136,7 +136,7 @@ Use the -O option as below
     % mecab -Odump (全情報を出力)
 
 These output formats are stored in `/usr/local/lib/mecab/ipadic/dicrc`.
-Furthermore, the user can create custom definitions. Please take a look
+The user can also create custom definitions. Please take a look
 at the Output Formats documentation (TODO).
 
 Advanced Usage
