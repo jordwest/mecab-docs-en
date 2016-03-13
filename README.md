@@ -176,7 +176,7 @@ MeCab estimates somehow part-of-speech tagging even if a word is not registered 
     ホリエモン      名詞,固有名詞,人名,一般,*,*,*
     さん    名詞,接尾,人名,*,*,*,さん,サン,サン
 
-But the estimation is not so much high.  If you want to always output an unknown word as 'Unknown', you can use -x (--unk-feature) option. A string that is specified by the option is used for the unknown word tagging.
+But the estimation's accuracy is not so much high.  If you want to always output an unknown word as 'Unknown', you can use -x (--unk-feature) option. A string that is specified by the option is used for the unknown word tagging.
 
     %mecab --unk-feature "未知語" 
     ホリエモンさん
