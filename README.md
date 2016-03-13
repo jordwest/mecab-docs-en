@@ -215,4 +215,3 @@ Jorge Nocedal for making the FORTRAN implementation of L-BFGS open to the public
 J. Nocedal. Updating Quasi-Newton Matrices with Limited Storage (1980), Mathematics of Computation 35, pp. 773-782.
 D.C. Liu and J. Nocedal. On the Limited Memory Method for Large Scale Optimization (1989), Mathematical Programming B, 45, 3, pp. 503-528.
 
-めかぶ
