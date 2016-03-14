@@ -143,7 +143,7 @@ Advanced Usage
 --------------
 ### Changing the character code
 
-(TODO)
+euc is used in default. If you want to use shift-jis or utf8, change charset of dictionary’s configure option, and rebuild the dictionary. Then, shift-jis’s or utf8’s dictionary is made.
 
     % tar zxfv mecab-ipadic-2.7.0-xxxx
     % cd mecab-ipadic-2.7.0-xxxx
@@ -154,7 +154,7 @@ Advanced Usage
     % ./configure --with-charset=utf8
     % make
 
-(TODO)
+Or, by using mecab-dict-index’s -t option, you can directly rebuild a differenct character encoding dictionary. -f option is for an original dictionary’s character encoding.
 
     % cd mecab-ipadic-2.7.0-xxxx
     % /usr/local/libexec/mecab/mecab-dict-index -f euc-jp -t utf-8
@@ -162,11 +162,11 @@ Advanced Usage
 
 ### UTF-8 only mode
 
-(TODO)
+If you specify –enable-utf8-only in configure option, MeCab becomes to handle only utf8 character encoding. When supporting euc-jp and shift-jis, MeCab embeds a conversion table. By specifying –enable-utf8-only, an executable binary size can be reduced as a result of suppressing the table’s embedding.
 
 ### Unknown Word Estimation
 
-(TODO)
+MeCab estimates somehow part-of-speech tagging even if a word is not registered in a dictionary.
 
     ホリエモン市
     ホリエモン      名詞,固有名詞,地域,一般,*,*,*
@@ -176,7 +176,7 @@ Advanced Usage
     ホリエモン      名詞,固有名詞,人名,一般,*,*,*
     さん    名詞,接尾,人名,*,*,*,さん,サン,サン
 
-(TODO)
+But the estimation's accuracy is not so much high.  If you want to always output an unknown word as 'Unknown', you can use -x (--unk-feature) option. A string that is specified by the option is used for the unknown word tagging.
 
     %mecab --unk-feature "未知語" 
     ホリエモンさん
@@ -215,4 +215,3 @@ Jorge Nocedal for making the FORTRAN implementation of L-BFGS open to the public
 J. Nocedal. Updating Quasi-Newton Matrices with Limited Storage (1980), Mathematics of Computation 35, pp. 773-782.
 D.C. Liu and J. Nocedal. On the Limited Memory Method for Large Scale Optimization (1989), Mathematical Programming B, 45, 3, pp. 503-528.
 
-めかぶ
